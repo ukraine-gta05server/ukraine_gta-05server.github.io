@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Південна Україна</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Скляна шапка -->
+<header class="glass-header">
+    <div class="logo">
+        <img src="images/mylogo.png" alt="Південна Україна">
+        <h1>Південна Україна</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="https://forum.ukraine-gta.com.ua/">Форум</a></li>
+            <li><a href="https://ukraine-gta.com.ua/uk/cabinet/login" target="_blank">Особистий кабінет</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Корисна інформація</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1e1e2f;
+    color: #fff;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 50px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .center-text {
+    text-align: center;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .center-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .center-text p {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #2d0479, #359210);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 220px;
+    text-align: center;
+  }
+
+  .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+
+  .info-box {
+    width: 220px;
+    height: 0;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .info-box.open {
+    height: 150px;
+  }
+
+  .info-text {
+    opacity: 0;
+    margin-top: 15px;
+    transition: opacity 0.8s ease;
+  }
+
+  .info-text.show {
+    opacity: 1;
+  }
+
+  /* Великі блоки внизу */
+  .large-block {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fdfdfd26;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .large-block .button {
+    width: 250px;
+  }
+
+  .large-block .info-box {
+    width: 100%;
+  }
+
+  .large-block .info-box.open {
+    height: 250px;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="main">
+
+  <!-- Ліва колонка -->
+  <div class="column">
+    <button class="button" data-target="l1">Блок 1</button>
+    <div class="info-box" id="l1">
+      <div class="info-text">Текст блоку 1</div>
+    </div>
+
+    <button class="button" data-target="l2">Блок 2</button>
+    <div class="info-box" id="l2">
+      <div class="info-text">Текст блоку 2</div>
+    </div>
+
+    <button class="button" data-target="l3">Блок 3</button>
+    <div class="info-box" id="l3">
+      <div class="info-text">Текст блоку 3</div>
+    </div>
+
+    <button class="button" data-target="l4">Блок 4</button>
+    <div class="info-box" id="l4">
+      <div class="info-text">Текст блоку 4</div>
+    </div>
+
+    <button class="button" data-target="l5">Блок 5</button>
+    <div class="info-box" id="l5">
+      <div class="info-text">Текст блоку 5</div>
+    </div>
+  </div>
+
+  <!-- Центр -->
+  <div class="center-text">
+    <h1>Корисна інформація</h1>
+    <p>Уся важлива інформація про сервер Південна Україна</p>
+  </div>
+
+  <!-- Права колонка -->
+  <div class="column">
+    <button class="button" data-target="r1">Блок 1</button>
+    <div class="info-box" id="r1">
+      <div class="info-text">Текст блоку 1</div>
+    </div>
+
+    <button class="button" data-target="r2">Блок 2</button>
+    <div class="info-box" id="r2">
+      <div class="info-text">Текст блоку 2</div>
+    </div>
+
+    <button class="button" data-target="r3">Блок 3</button>
+    <div class="info-box" id="r3">
+      <div class="info-text">Текст блоку 3</div>
+    </div>
+
+    <button class="button" data-target="r4">Блок 4</button>
+    <div class="info-box" id="r4">
+      <div class="info-text">Текст блоку 4</div>
+    </div>
+
+    <button class="button" data-target="r5">Блок 5</button>
+    <div class="info-box" id="r5">
+      <div class="info-text">Текст блоку 5</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Великі блоки внизу -->
+<div class="large-block">
+  <button class="button" data-target="big1">Великий блок 1</button>
+  <div class="info-box" id="big1">
+    <div class="info-text">Тут буде великий контент першого великого блока.</div>
+  </div>
+</div>
+
+<div class="large-block">
+  <button class="button" data-target="big2">Великий блок 2</button>
+  <div class="info-box" id="big2">
+    <div class="info-text">Тут буде великий контент другого великого блока.</div>
+  </div>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.button');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const infoBox = document.getElementById(targetId);
+      const infoText = infoBox.querySelector('.info-text');
+
+      infoBox.classList.toggle('open');
+      if(infoBox.classList.contains('open')){
+        setTimeout(() => infoText.classList.add('show'), 500);
+      } else {
+        infoText.classList.remove('show');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
